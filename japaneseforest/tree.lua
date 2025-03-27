@@ -54,7 +54,6 @@ for index,def in ipairs(trees) do
 			}
 		},
 		sounds = default.node_sound_leaves_defaults(),
-	
 		after_place_node = default.after_place_leaves,
 	})
 
@@ -89,12 +88,13 @@ for index,def in ipairs(trees) do
 		end,
 
 		on_place = function(itemstack, placer, pointed_thing)
-			itemstack = default.sapling_on_place(itemstack, placer, pointed_thing,
-			sapling,
+			itemstack = default.sapling_on_place(
+				itemstack, placer, pointed_thing,
+				sapling,
 				{x = -2, y = 1, z = -2},
 				{x = 2, y = 15, z = 2},
-				4)
-
+				4
+			)
 			return itemstack
 		end,
 	})
