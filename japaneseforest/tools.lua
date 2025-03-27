@@ -382,7 +382,6 @@ minetest.register_node("japaneseforest:paths", {
 	description = "Path",
 	drawtype = "nodebox",
 	tiles = {"japaneseforest_path_top.png", "default_dirt.png", "default_dirt.png^japaneseforest_japaneseforest_side.png"},
-	is_ground_content = false,
 	paramtype = "light",
 	node_box = {
 		type = "fixed",
